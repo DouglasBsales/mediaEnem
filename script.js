@@ -1,27 +1,26 @@
-let matematicaInput = document.getElementById("mat")
-  matematicaInput.addEventListener('input', function(){
-  matematicaInput.style.color = "#fff"
+let matematicaInput = document.getElementById("mat");
+matematicaInput.addEventListener("input", function () {
+  matematicaInput.style.color = "#fff";
 });
 
-let humanasInput = document.getElementById("human")
-  humanasInput.addEventListener('input', function(){
-  humanasInput.style.color = "#fff"
+let humanasInput = document.getElementById("human");
+humanasInput.addEventListener("input", function () {
+  humanasInput.style.color = "#fff";
 });
 
-let naturezaInput = document.getElementById("natureza")
-  naturezaInput.addEventListener('input', function(){
-  naturezaInput.style.color = "#fff"
+let naturezaInput = document.getElementById("natureza");
+naturezaInput.addEventListener("input", function () {
+  naturezaInput.style.color = "#fff";
 });
 
-let linguagemInput = document.getElementById("language")
-  linguagemInput.addEventListener('input', function(){
-  linguagemInput.style.color = "#fff"
+let linguagemInput = document.getElementById("language");
+linguagemInput.addEventListener("input", function () {
+  linguagemInput.style.color = "#fff";
 });
 
-
-let redacaoInput = document.getElementById("redacao")
-  redacaoInput.addEventListener('input', function(){
-  redacaoInput.style.color = "#fff"
+let redacaoInput = document.getElementById("redacao");
+redacaoInput.addEventListener("input", function () {
+  redacaoInput.style.color = "#fff";
 });
 
 function exibirMedia() {
@@ -34,39 +33,41 @@ function exibirMedia() {
   let soma = (matematica + humanas + linguagens + natureza + redacao) / 5;
   let media = document.getElementById("resultadoNota");
 
-  if (isNaN(matematica) || isNaN(humanas) || isNaN(linguagens) || isNaN(natureza) || isNaN(redacao)) {
+  if (
+    isNaN(matematica) ||
+    isNaN(humanas) ||
+    isNaN(linguagens) ||
+    isNaN(natureza) ||
+    isNaN(redacao)
+  ) {
     return alert("Escreva notas válidas!");
   }
 
   media.textContent = soma;
 
   let pageResultado = document.getElementById("pageResultado");
-  let pageNota = document.getElementById("pageNota");
-  pageNota.style.opacity = "0.2";
-  pageNota.style.transition = "opacity 0.9 ease"
-
+  pageResultado.style.opacity = "1";
+  pageResultado.style.transition = " opacity 0.6s ease";
   pageResultado.style.visibility = "visible";
 
-  // Iniciar transição no body
-  document.body.style.transition = "background-color 0.9s ease";
-  document.body.style.backgroundColor = "#21394E";
+  let pageNota = document.getElementById("pageNota");
+  pageNota.style.opacity = "0.2";
+  pageNota.style.transition = "opacity 0.7s ease";
 
-  setTimeout(function(){
-    pageResultado.style.visibility = "visible"
-  }, 500)
-};
+  // Iniciar transição no body
+  document.body.style.backgroundColor = "#21394E";
+  document.body.style.transition = "background-color 0.7s ease";
+}
 
 function fecharPage() {
   let pageFecharResultado = document.getElementById("pageResultado");
+  pageFecharResultado.style.opacity = "0";
+  pageFecharResultado.style.visibility = "hidden";
+
   let pageNota = document.getElementById("pageNota");
-  pageNota.style.opacity = "0.9";
-  pageNota.style.transition = "opacity 0.9 ease"
+  pageNota.style.opacity = "1";
 
-
-  document.body.style.transition = "background-color 0.9s ease";
   document.body.style.backgroundColor = "#fff";
 
-  setTimeout(function() {
-    pageFecharResultado.style.visibility = "hidden";
-  }, 300);
 }
+
