@@ -4,35 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calcular media Enem</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="favicon/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap");
 
-      @media (max-width: 964px){
-        
-        #mediaEnem{
+      @media (max-width: 964px) {
+        #mediaEnem {
           text-align: center;
         }
-
       }
 
-      @media (max-width: 777px){
+      @media (max-width: 777px) {
         #form {
-          flex-wrap:wrap;
+          flex-wrap: wrap;
         }
 
-        fieldset{
+        fieldset {
           width: 30%;
-          margin-top:10px;
+          margin-top: 10px;
         }
 
-        #form  #button{
+        #form #button {
           margin-top: 10px;
           width: 100%;
         }
-
       }
-
     </style>
   </head>
   <body
@@ -44,67 +48,137 @@
       align-items: center;
     "
   >
-    <div 
-    id="pageNota"
-    style=
-    "background-color: #69DB7C;
-    padding: 20px;
-    border-radius: 10px;"
+    <div
+      id="pageNota"
+      style="background-color: #69db7c; padding: 20px; border-radius: 10px"
     >
       <h1
-      id="mediaEnem"
-      style=
-      "color: #202020;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 28px;
-      color: #fff;
-      ">Coloque aqui as suas notas e descubra a sua média no ENEM</h1>
-      
-      <form action="" id="form" style="display: flex; ; align-items: flex-end; justify-content: space-around;">
-      
-        <fieldset style="height: 35px; border: 2px solid #fff; border-radius: 5px;">
-          <legend style="color: #fff; padding-left: 5px; font-weight: bold; font-size: 14px;  ">Matemática</legend>
+        id="mediaEnem"
+        style="
+          color: #202020;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 28px;
+          color: #fff;
+        "
+      >
+        Coloque aqui as suas notas e descubra a sua média no ENEM
+      </h1>
+
+      <form
+        action=""
+        id="form"
+        style="
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-around;
+        "
+      >
+        <fieldset
+          style="height: 35px; border: 2px solid #fff; border-radius: 5px"
+        >
+          <legend
+            style="
+              color: #fff;
+              padding-left: 5px;
+              font-weight: bold;
+              font-size: 14px;
+            "
+          >
+            Matemática
+          </legend>
           <input
-            style="width: 50px; border: none; outline: none; background-color: transparent;
-            font-size: 18px;
-            font-weight: bold;
-            width: 60px;"
+            style="
+              width: 50px;
+              border: none;
+              outline: none;
+              background-color: transparent;
+              font-size: 18px;
+              font-weight: bold;
+              width: 60px;
+            "
             type="text"
             maxlength="5"
             id="mat"
           />
         </fieldset>
-        <fieldset style="height: 35px; border: 2px solid #fff; border-radius: 5px;">
-          <legend style="color: #fff; padding-left: 5px; font-weight: bold; font-size: 14px;">Humanas</legend>
+        <fieldset
+          style="height: 35px; border: 2px solid #fff; border-radius: 5px"
+        >
+          <legend
+            style="
+              color: #fff;
+              padding-left: 5px;
+              font-weight: bold;
+              font-size: 14px;
+            "
+          >
+            Humanas
+          </legend>
           <input
-            style="width: 50px; border: none; outline: none; background-color: transparent;
-            font-size: 18px;
-            font-weight: bold;
-            width: 60px;"
+            style="
+              width: 50px;
+              border: none;
+              outline: none;
+              background-color: transparent;
+              font-size: 18px;
+              font-weight: bold;
+              width: 60px;
+            "
             type="text"
             maxlength="5"
             id="human"
           />
         </fieldset>
-        <fieldset style="height: 35px; border: 2px solid #fff; border-radius: 5px;">
-          <legend style="color: #fff; padding-left: 5px; font-weight: bold; font-size: 14px;">Linguagens</legend>
+        <fieldset
+          style="height: 35px; border: 2px solid #fff; border-radius: 5px"
+        >
+          <legend
+            style="
+              color: #fff;
+              padding-left: 5px;
+              font-weight: bold;
+              font-size: 14px;
+            "
+          >
+            Linguagens
+          </legend>
           <input
-            style="width: 50px; border: none; outline: none; background-color: transparent;
-            font-size: 18px;
-            font-weight: bold;
-            width: 60px;"
+            style="
+              width: 50px;
+              border: none;
+              outline: none;
+              background-color: transparent;
+              font-size: 18px;
+              font-weight: bold;
+              width: 60px;
+            "
             type="text"
             maxlength="5"
             id="language"
           />
         </fieldset>
-        <fieldset style="height: 35px; border: 2px solid #fff; border-radius: 5px;">
-          <legend style="color: #fff; padding-left: 5px; font-weight: bold; font-size: 14px;">Natureza</legend>
+        <fieldset
+          style="height: 35px; border: 2px solid #fff; border-radius: 5px"
+        >
+          <legend
+            style="
+              color: #fff;
+              padding-left: 5px;
+              font-weight: bold;
+              font-size: 14px;
+            "
+          >
+            Natureza
+          </legend>
           <input
-            style="width: 50px; border: none; outline: none; background-color: transparent;
-            font-size: 18px;
-            font-weight: bold;
-            width: 60px;
+            style="
+              width: 50px;
+              border: none;
+              outline: none;
+              background-color: transparent;
+              font-size: 18px;
+              font-weight: bold;
+              width: 60px;
             "
             type="text"
             maxlength="5"
@@ -112,20 +186,36 @@
           />
         </fieldset>
 
-        <fieldset style="height: 35px; border: 2px solid #fff; border-radius: 5px;">
-          <legend style="color: #fff; padding-left: 5px; font-weight: bold; font-size: 14px;">Redação</legend>
+        <fieldset
+          style="height: 35px; border: 2px solid #fff; border-radius: 5px"
+        >
+          <legend
+            style="
+              color: #fff;
+              padding-left: 5px;
+              font-weight: bold;
+              font-size: 14px;
+            "
+          >
+            Redação
+          </legend>
           <input
-            style="width: 50px; border: none; outline: none; background-color: transparent;
-            font-size: 18px;
-            font-weight: bold;
-            width: 60px;"
+            style="
+              width: 50px;
+              border: none;
+              outline: none;
+              background-color: transparent;
+              font-size: 18px;
+              font-weight: bold;
+              width: 60px;
+            "
             type="text"
             id="redacao"
           />
         </fieldset>
         <button
-        id="button"
-        type="button"
+          id="button"
+          type="button"
           style="
             background-color: #333333;
             border-radius: 10px;
@@ -133,35 +223,66 @@
             cursor: pointer;
             height: 50px;
           "
-        onclick="exibirMedia()">
-          <p style=
-          "color: #fff;
-          font-family: 'Montserrat', sans-serif;
-          font-size: 14px;
-          font-weight: bold;
-          ">
+          onclick="exibirMedia()"
+        >
+          <p
+            style="
+              color: #fff;
+              font-family: 'Montserrat', sans-serif;
+              font-size: 14px;
+              font-weight: bold;
+            "
+          >
             Descobrir minha nota
           </p>
         </button>
       </form>
     </div>
 
-    <div style="display: flex; flex-direction: column; justify-content: center; border-radius: 10px; background-color: #69DB7C; padding: 30px; position: absolute; visibility: hidden;" id="pageResultado">
-
-      <div style="display: flex; justify-content: flex-end;">
-        <button 
-        style="background: transparent; 
-        border: none;" 
-        onclick="fecharPage()">
-          <i style="font-size: 25px; cursor: pointer;" class="bi bi-x-lg"></i>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: #69db7c;
+        padding: 30px;
+        position: absolute;
+        visibility: hidden;
+      "
+      id="pageResultado"
+    >
+      <div style="display: flex; justify-content: flex-end">
+        <button
+          style="background: transparent; border: none"
+          onclick="fecharPage()"
+        >
+          <i style="font-size: 25px; cursor: pointer" class="bi bi-x-lg"></i>
         </button>
       </div>
 
-      <h1 style="color: #fff;
-      font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column;">Sua média do Enem
-      <span style="text-align: center;">foi de:</span></h1>
-      <p id="resultadoNota"
-      style="font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 48px; text-align: center; background-color: #fff; color:#69DB7C; padding: 20px; border-radius: 20px;"
+      <h1
+        style="
+          color: #fff;
+          font-family: 'Montserrat', sans-serif;
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        Sua média do Enem <span style="text-align: center">foi de:</span>
+      </h1>
+      <p
+        id="resultadoNota"
+        style="
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+          font-size: 48px;
+          text-align: center;
+          background-color: #fff;
+          color: #69db7c;
+          padding: 20px;
+          border-radius: 20px;
+        "
       ></p>
     </div>
   </body>
