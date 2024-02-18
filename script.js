@@ -68,6 +68,12 @@ function fecharPage() {
   pageNota.style.opacity = "1";
 
   document.body.style.backgroundColor = "#fff";
-
 }
 
+function closedPageOnEsc(event) {
+  if (event.key === "Escape") {
+    fecharPage();
+  }
+}
+
+document.addEventListener("keyup", closedPageOnEsc);
