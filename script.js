@@ -1,27 +1,9 @@
-let matematicaInput = document.getElementById("mat");
-matematicaInput.addEventListener("input", function () {
-  matematicaInput.style.color = "#fff";
-});
-
-let humanasInput = document.getElementById("human");
-humanasInput.addEventListener("input", function () {
-  humanasInput.style.color = "#fff";
-});
-
-let naturezaInput = document.getElementById("natureza");
-naturezaInput.addEventListener("input", function () {
-  naturezaInput.style.color = "#fff";
-});
-
-let linguagemInput = document.getElementById("language");
-linguagemInput.addEventListener("input", function () {
-  linguagemInput.style.color = "#fff";
-});
-
-let redacaoInput = document.getElementById("redacao");
-redacaoInput.addEventListener("input", function () {
-  redacaoInput.style.color = "#fff";
-});
+let inputs = document.getElementsByTagName("input");
+for (let i = 0; i < inputs.length; i++) {
+  inputs[i].addEventListener("input", function () {
+    this.style.color = "#fff";
+  });
+}
 
 function exibirMedia() {
   let matematica = parseFloat(document.getElementById("mat").value);
